@@ -1,0 +1,4 @@
+A calculator control can be thought of as a device that responds to keys by performing all basic behavior. This approach is a dead end street that leads to a very complicated state machine that is difficult to understand. to deal with We can describe another way based on the observation that a calculator is a function Object() { [native code] }. strings that are performed when they are done The rules for operating such a calculator device are fairly simple. straightforward:
+• Parse the incoming keys and assign them to the corresponding control attribute.
+• Build an Expression string from the incoming keys.
+• When arithmetic rules are followed, perform the calculation specified by the Expression string.
